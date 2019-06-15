@@ -32,5 +32,4 @@ class Dog
   lila = Dog.new("Lila")
   roz = Dog.new("Roz")
   
-  binding.pry
 end 
