@@ -1,13 +1,19 @@
+require "pry"
+
 class Dog 
   
   @@all = []
   
-  attr_accessor :name 
+  attr_accessor  
   
   def initialize(name)
     @name = name
     @@all << self 
   end
+  
+  def name
+    @name 
+  end 
   
   def self.clear_all
     @@all.clear 
@@ -15,9 +21,15 @@ class Dog
   
   def self.all 
     @@all. each do |dog|
-      name = self.name 
-      puts name 
+      dog_name = dog.name 
+      puts dog_name 
     end 
   end 
+  
+  elise = Dog.new("Elise")
+  scout = Dog.new("Scout")
+  ducky = Dog.new("Ducky")
+  lila = Dog.new("Lila")
+  roz = Dog.new("Roz")
   
 end 
