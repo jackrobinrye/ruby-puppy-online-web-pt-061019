@@ -17,9 +17,16 @@ class Dog
   
   def self.all 
     @@all. each do |dog|
-      name = self.name 
-      puts name 
+      dog_name = self.name 
+      puts dog_name 
     end 
   end 
+  
+  elise = Dog.new("Elise")
+  scout = Dog.new("Scout")
+  ducky = Dog.new("Ducky")
+  lila = Dog.new("Lila")
+  roz = Dog.new("Roz")
+  
   binding.pry
 end 
