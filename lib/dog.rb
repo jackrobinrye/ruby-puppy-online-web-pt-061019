@@ -1,3 +1,5 @@
+require "pry"
+
 class Dog 
   
   @@all = []
@@ -19,5 +21,5 @@ class Dog
       puts name 
     end 
   end 
-  
+  binding.pry
 end 
